@@ -1,6 +1,6 @@
 # ☁️ Ekstraksi Fitur Warna Citra Langit (Computer Vision)
 
-Repository ini berisi *source code* dan dokumentasi untuk tugas mata kuliah **Computer Vision**. Proyek ini bertujuan untuk melakukan ekstraksi fitur warna pada citra langit dan mengklasifikasikan kondisi cuaca secara otomatis menggunakan algoritma *thresholding* berbasis Python dan OpenCV.
+Repository ini berisi *source code* dan dokumentasi untuk tugas mata kuliah **Computer Vision**. Proyek ini bertujuan untuk melakukan ekstraksi fitur warna pada citra langit dan mengklasifikasikan kondisi cuaca secara otomatis menggunakan algoritma *thresholding* berbasis Python dan OpenCV
 
 ## 🔗 Tautan Penting
 
@@ -11,7 +11,7 @@ Repository ini berisi *source code* dan dokumentasi untuk tugas mata kuliah **Co
 
 ## 📌 Deskripsi Proyek
 
-Sistem ini tidak bergantung pada waktu/jam pengambilan gambar, melainkan murni menganalisis komposisi piksel warna citra (RGB) untuk mendeteksi fenomena atmosfer nyata. 
+Sistem ini tidak bergantung pada waktu/jam pengambilan gambar, melainkan murni menganalisis komposisi piksel warna citra (RGB) untuk mendeteksi fenomena atmosfer nyata
 
 Terdapat 4 kategori klasifikasi cuaca pada sistem ini :
 1. ☀️ **Langit Cerah (Clear Sky)**
@@ -26,10 +26,10 @@ Sistem menggunakan **Nilai Rata-rata (Mean)** dari setiap kanal warna (Red, Gree
 2. **Rasio R/B** = `Mean R / Mean B` (Untuk mendeteksi efek Hamburan Rayleigh).
 
 **Aturan Thresholding:**
-* **Senja:** `Rasio R/B >= 1.5` (Warna merah sangat dominan).
-* **Mendung:** `Rasio R/B >= 0.81` DAN `Total RGB < 400` (Warna netral/abu-abu dan minim cahaya).
-* **Langit Cerah:** `Rasio R/B < 0.45` (Warna biru sangat dominan).
-* **Berawan:** Nilai sisa dari rentang di atas (Cerah dengan pantulan awan putih).
+* **Senja :** `Rasio R/B >= 1.5` (Warna merah sangat dominan).
+* **Mendung :** `Rasio R/B >= 0.81` DAN `Total RGB < 400` (Warna netral/abu-abu dan minim cahaya).
+* **Langit Cerah :** `Rasio R/B < 0.45` (Warna biru sangat dominan).
+* **Berawan :** Nilai sisa dari rentang di atas (Cerah dengan pantulan awan putih).
 
 ## 🛠️ Teknologi yang Digunakan
 * **Python 3**
